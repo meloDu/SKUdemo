@@ -1,0 +1,305 @@
+<resources>
+    <string name="app_name">MultipleSKU</string>
+    <string name="jsonData">{
+        "attributes": [
+        {
+            "tabID": 0,
+            "tabName": "颜色",
+            "attributesItem": [
+                "白",
+                "蓝",
+                "黑"
+            ]
+        },
+        {
+            "tabID": 1,
+            "tabName": "型号",
+            "attributesItem": [
+                "S",
+                "X",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "tabID": 2,
+            "tabName": "衣服",
+            "attributesItem": [
+                "羽绒服",
+                "T恤",
+                "棉毛衫"
+            ]
+        },
+        {
+            "tabID": 3,
+            "tabName": "大小",
+            "attributesItem": [
+                "大",
+                "中",
+                "小"
+            ]
+        }
+    ],
+    "stockGoods": [
+        {
+            "goodsID": 1,
+            "goodsInfo": [
+                {
+                    "tabID": 0,
+                    "tabName": "颜色",
+                    "tabValue": "白"
+                },
+                {
+                    "tabID": 1,
+                    "tabName": "型号",
+                    "tabValue": "X"
+                },
+                {
+                    "tabID": 2,
+                    "tabName": "衣服",
+                    "tabValue": "羽绒服"
+                },
+                {
+                    "tabID": 3,
+                    "tabName": "大小",
+                    "tabValue": "中"
+                }
+            ]
+        },
+        {
+            "goodsID": 2,
+            "goodsInfo": [
+                {
+                    "tabID": 0,
+                    "tabName": "颜色",
+                    "tabValue": "白"
+                },
+                {
+                    "tabID": 1,
+                    "tabName": "型号",
+                    "tabValue": "XL"
+                },
+                {
+                    "tabID": 2,
+                    "tabName": "衣服",
+                    "tabValue": "羽绒服"
+                },
+                {
+                    "tabID": 3,
+                    "tabName": "大小",
+                    "tabValue": "大"
+                }
+            ]
+        },
+        {
+            "goodsID": 3,
+            "goodsInfo": [
+                {
+                    "tabID": 0,
+                    "tabName": "颜色",
+                    "tabValue": "白"
+                },
+                {
+                    "tabID": 1,
+                    "tabName": "型号",
+                    "tabValue": "XXL"
+                },
+                {
+                    "tabID": 2,
+                    "tabName": "衣服",
+                    "tabValue": "棉毛衫"
+                },
+                {
+                    "tabID": 3,
+                    "tabName": "大小",
+                    "tabValue": "小"
+                }
+            ]
+        },
+        {
+            "goodsID": 4,
+            "goodsInfo": [
+                {
+                    "tabID": 0,
+                    "tabName": "颜色",
+                    "tabValue": "蓝"
+                },
+                {
+                    "tabID": 1,
+                    "tabName": "型号",
+                    "tabValue": "S"
+                },
+                {
+                    "tabID": 2,
+                    "tabName": "衣服",
+                    "tabValue": "棉毛衫"
+                },
+                {
+                    "tabID": 3,
+                    "tabName": "大小",
+                    "tabValue": "小"
+                }
+            ]
+        },
+        {
+            "goodsID": 5,
+            "goodsInfo": [
+                {
+                    "tabID": 0,
+                    "tabName": "颜色",
+                    "tabValue": "黑"
+                },
+                {
+                    "tabID": 1,
+                    "tabName": "型号",
+                    "tabValue": "XXL"
+                },
+                {
+                    "tabID": 2,
+                    "tabName": "衣服",
+                    "tabValue": "T恤"
+                },
+                {
+                    "tabID": 3,
+                    "tabName": "大小",
+                    "tabValue": "大"
+                }
+            ]
+        }
+    ]
+}</string>
+
+
+    <string name="json">
+        {
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "detail": {
+            "id": 80,
+            "name": "口算速算",
+            "sku_ids": "30,31,7,12",
+            "description": "",
+            "price": "99.00",
+            "price_vip": "",
+            "price_starttime": "",
+            "price_endtime": "",
+            "express_price": "0.00",
+            "price_distribution": "9.5",
+            "price_promote": "0.00",
+            "cover_pc": "",
+            "cover_ipc": "",
+            "cover_mobile": "",
+            "cover_pad": "",
+            "gallery": [],
+            "recommends": "",
+            "status": 4,
+            "sale_time": "",
+            "is_sale": 1,
+            "content": "",
+            "content_pad": "",
+            "content_app": "",
+            "current_time": "2019-07-25 15:53:08",
+            "is_sale_txt": "在售",
+            "status_txt": "下架",
+            "price_vip_arr": [],
+            "sku_ids_arr": [
+                {
+                    "id": 7,
+                    "name": "5~6岁",
+                    "attribute_id": 4,
+                    "attribute_name": "年龄"
+                },
+                {
+                    "id": 12,
+                    "name": "1年",
+                    "attribute_id": 5,
+                    "attribute_name": "有效期"
+                },
+                {
+                    "id": 30,
+                    "name": "Level 1",
+                    "attribute_id": 12,
+                    "attribute_name": "Level等级"
+                },
+                {
+                    "id": 31,
+                    "name": "Level 2",
+                    "attribute_id": 12,
+                    "attribute_name": "Level等级"
+                }
+            ],
+            "sku_attribute_arr": [
+                {
+                    "attribute_id": 4,
+                    "attribute_name": "年龄",
+                    "option_list": [
+                        {
+                            "id": 7,
+                            "name": "5~6岁"
+                        }
+                    ]
+                },
+                {
+                    "attribute_id": 5,
+                    "attribute_name": "有效期",
+                    "option_list": [
+                        {
+                            "id": 7,
+                            "name": "5~6岁"
+                        },
+                        {
+                            "id": 12,
+                            "name": "1年"
+                        }
+                    ]
+                },
+                {
+                    "attribute_id": 12,
+                    "attribute_name": "Level等级",
+                    "option_list": [
+                        {
+                            "id": 7,
+                            "name": "5~6岁"
+                        },
+                        {
+                            "id": 12,
+                            "name": "1年"
+                        },
+                        {
+                            "id": 30,
+                            "name": "Level 1"
+                        },
+                        {
+                            "id": 31,
+                            "name": "Level 2"
+                        }
+                    ]
+                }
+            ],
+            "skus": [
+                {
+                    "id": 130,
+                    "sku_sn": "jy9y7hxn-7-c-1e",
+                    "price": "0.00",
+                    "cover": "",
+                    "sku_ids": "7,12,30",
+                    "sku_names": "5~6岁,1年,Level 1",
+                    "is_have": 0
+                },
+                {
+                    "id": 131,
+                    "sku_sn": "jy9y7hxn-7-c-1f",
+                    "price": "0.00",
+                    "cover": "",
+                    "sku_ids": "7,12,31",
+                    "sku_names": "5~6岁,1年,Level 2",
+                    "is_have": 0
+                }
+            ]
+        }
+    }
+}
+
+    </string>
+</resources>
