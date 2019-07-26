@@ -76,6 +76,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
             textView.setBackground(mContext.getResources().getDrawable(R.drawable.gride_selector));
 //            textView.setBackgroundColor(ContextCompat.getColor(mContext, R.color.saddlebrown));
             textView.setText(childrens.get(i).getName());
+            textView.setId(childrens.get(i).getId());
             textView.setTextColor(ContextCompat.getColor(mContext, R.color.black));
             textViews[i] = textView;
             vg_skuItem.addView(textViews[i]);
@@ -107,7 +108,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
         public void onClick(View v) {
             focusPositionG = positionG;
             focusPositionC = positionC;
-            String value = childrenViews[positionG][positionC].getText().toString();
+            String value = childrenViews[positionG][positionC].getId()+"";
             switch (operation) {
                 case SELECTED:
                     saveClick.put(positionG, positionC + "");
@@ -148,7 +149,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
         public void onFocusChange(View v, boolean hasFocus) {
             String clickpositionC = saveClick.get(positionG);
             if (hasFocus) {
-                v.setBackgroundColor(ContextCompat.getColor(mContext, R.color.pink));
+//                v.setBackgroundColor(ContextCompat.getColor(mContext, R.color.pink));
                 if (TextUtils.isEmpty(clickpositionC)) {
                     ((TextView) v).setTextColor(ContextCompat.getColor(mContext, R.color.black));
                 } else if (clickpositionC.equals(positionC + "")) {
@@ -157,7 +158,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
                     ((TextView) v).setTextColor(ContextCompat.getColor(mContext, R.color.black));
                 }
             } else {
-                v.setBackgroundColor(ContextCompat.getColor(mContext, R.color.color_order_tv_status));
+//                v.setBackgroundColor(ContextCompat.getColor(mContext, R.color.color_order_tv_status));
                 if (TextUtils.isEmpty(clickpositionC)) {
                     ((TextView) v).setTextColor(ContextCompat.getColor(mContext, R.color.black));
                 } else if (clickpositionC.equals(positionC + "")) {
@@ -197,7 +198,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
                     if (i == k || TextUtils.isEmpty(selectedValue[k])) {
                         continue;
                     }
-                    if (!selectedValue[k].equals(goodsInfo.get(k).getName())) {
+                    if (!selectedValue[k].equals(goodsInfo.get(k).getId()+"")) {
                         filter = true;
                         break;
                     }
@@ -205,9 +206,9 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
                 if (!filter) {
                     for (int n = 0; n < childrenViews[i].length; n++) {
                         TextView textView = childrenViews[i][n];//拿到所有属性TextView
-                        String name = textView.getText().toString();
+                        String id = textView.getId()+"";
                         //拿到属性名称
-                        if (goodsInfo.get(i).getName().equals(name)) {
+                        if ((goodsInfo.get(i).getId()+"").equals(id)) {
                             textView.setEnabled(true);//符合就变成可点击
                             textView.setFocusable(true); //设置可以获取焦点
                             //不要让焦点乱跑
@@ -236,7 +237,7 @@ public class GoodsAttrsAdapter extends BaseRecyclerAdapter<CourseBean.DataBean.D
         for (int i = 0; i < childrenViews.length; i++) {
             for (int j = 0; j < childrenViews[i].length; j++) {//拿到每行属性Item
                 TextView textView = childrenViews[i][j];//拿到所有属性TextView
-                String value = textView.getText().toString();
+                String value = textView.getId()+"";
                 for (int m = 0; m < selectedValue.length; m++) {
                     if (selectedValue[m].equals(value)) {
                         textView.setTextColor(ContextCompat.getColor(mContext, R.color.color_order_tv_status));

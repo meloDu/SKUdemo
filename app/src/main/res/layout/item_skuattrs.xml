@@ -4,27 +4,25 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_ItemName"
-        android:layout_width="0dp"
-        android:layout_weight="2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="规格"
         android:gravity="right"
-        android:textColor="#7f7f7f"
+        android:textColor="#000"
         android:layout_gravity="center_vertical"
         android:focusable="false"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <com.yifeng.multiplesku.SKUViewGroup
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/tv_ItemName"
         android:id="@+id/vg_skuItem"
-        android:layout_width="0dp"
-        android:layout_weight="8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
         android:layout_gravity="center_vertical"
         android:focusable="false"
         android:descendantFocusability="beforeDescendants" />
